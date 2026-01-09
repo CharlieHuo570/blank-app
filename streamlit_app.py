@@ -95,15 +95,10 @@ This is a website to demonstrate Streamlit's API.
 You can stop looking at this now.
 
 Please.
-"""
-st.write("This is some text made using Python.")
+""" 
+with st.form("form"): 
+    Q = st.text_input("What is your favorite food?")
+    Submit = st.form_submit_button("SUBMIT")
 
-adjective = st.text_input("Type in an adjective")
-noun = st.text_input("Type in a noun")
-verb = st.text_input("Type in a verb in past tense")
-
-st.write("I just gave a " + noun + " twenty " + adjective + " dollars and he " + verb + " me!")
-
-pressed = st.button("Press me!")
-if pressed:
-    st.write("Why did you do that?")
+    if Submit: 
+        st.write(get_standard_response('You are a chef that works at a resturant, tell us how to make this food.',Q)) 
