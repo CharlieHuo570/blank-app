@@ -89,12 +89,9 @@ def talk_to_chatgpt(system_prompt):
         )
 
 """
-# Hello World, Streamlit!
+# Hello Customer, welcome to my restaurant!!
 
-This is a website to demonstrate Streamlit's API.
-You can stop looking at this now.
-
-Please.
+I am charlie the cook and I am a five star chef, let me tell you how to make your favorite food!
 """ 
 with st.form("form"): 
     Q = st.text_input("What is your favorite food?")
